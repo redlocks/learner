@@ -21,8 +21,8 @@ In the input box, enter the topic to be learned and the necessary context (if ne
 
 ## Configuration
 
-The first time you run it, you need to create assistants in OpenAI `python3 learn.py --create_ass` 
-The values of the assistants id will be automatically updated in the environment variables 
+The first time you run it, you need to create assistants in OpenAI `python3 learn.py --create_ass`. 
+The values of the assistants id will be automatically updated in the environment variables. 
 Then you need to set the environment variables `OPENAI_API_KEY` with your API key, `BASE_PATH` with the path to your knowledge base (by default `~/Documents/learner`) and `LEARNER_LANG` - the language of the created notes if your native language is not English. The languages supported are those currently supported by OpenAI
 
 

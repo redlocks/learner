@@ -1,4 +1,0 @@
-
-GET_TOPICS_PROMPT = """
-
-"""
