@@ -27,8 +27,6 @@ class OpenAIClient:
         if run.status == 'completed': 
         
             messages = self.client.beta.threads.messages.list(thread_id=thread.id)
-
-            # print(messages)
         else:
             print(f"Run status: {run.status}")
         return json5.loads(messages.data[0].content[0].text.value)

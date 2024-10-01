@@ -1,6 +1,5 @@
 import os
 import argparse
-import subprocess
 from typing import List, Dict, Any
 from modules.openai_api import OpenAIClient
 import config
@@ -118,12 +117,10 @@ def main():
         os.environ['LEARNER_CLASSIFIER_ASSISTANT_ID'] = classifier_ass_id
         os.environ['LEARNER_CONTENT_ASSISTANT_ID'] = content_ass_id
         
-        print("Environment variables LEARNER_CLASSIFIER_ASSISTANT_ID and LEARNER_CONTENT_ASSISTANT_ID have been set.")
+        print("Environment variables LEARNER_CLASSIFIER_ASSISTANT_ID and LEARNER_CONTENT_ASSISTANT_ID have been set")
         
         exit()
     
-    # print(kb.format_topics_for_api())
-
     # Output the structure of the knowledge base in the form of a tree
     kb.print_knowledge_tree()
     
@@ -132,7 +129,6 @@ def main():
 
     kb.process_topic(topic, context)
 
-    # subprocess.run(["obsidian"])
 
 if __name__ == "__main__":
     main()
